@@ -1,0 +1,31 @@
+.books-inventory {
+  margin: 50px 15%;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+  align-items: baseline;
+}
+
+.search-bar {
+  width: 350px !important;
+}
+
+.mat-column-action {
+  width: 10% !important;
+}
+
+/* matNoDataRow styling */
+.mat-mdc-no-data-row {
+  td {
+    padding: 17px;
+  }
+}

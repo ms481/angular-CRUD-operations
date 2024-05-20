@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+}
+
+.form-field-row {
+  display: flex;
+  gap: 20px;
+}
+
+.book-container {
+  margin: 10% 10% 5% 10%;
+}
+
+/* Hide inputs spin box */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

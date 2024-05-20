@@ -1,0 +1,53 @@
+<div class="book-container">
+  <form [formGroup]="booksForm">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" />
+      <mat-error *ngIf="isRequiredError('title')"> Input required </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author" />
+      <mat-error *ngIf="isRequiredError('author')"> Input required </mat-error>
+    </mat-form-field>
+    <div class="form-field-row">
+      <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category">
+          <mat-option
+            *ngFor="let category of refDataService.getAllCategories() | async; let i = index"
+            [value]="category.key"
+            >{{ category.value }}</mat-option
+          >
+        </mat-select>
+        <mat-error *ngIf="isRequiredError('category')"> Input required </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Language</mat-label>
+        <mat-select formControlName="language">
+          <mat-option
+            *ngFor="let language of refDataService.getAllLanguages() | async; let i = index"
+            [value]="language.key"
+            >{{ language.value }}</mat-option
+          >
+        </mat-select>
+        <mat-error *ngIf="isRequiredError('language')"> Input required </mat-error>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field>
+      <mat-label>Quantity</mat-label>
+      <input matInput formControlName="quantity" type="number" />
+      <mat-error *ngIf="isRequiredError('quantity')"> Input required </mat-error>
+    </mat-form-field>
+  </form>
+  <mat-dialog-actions>
+    <button mat-flat-button color="primary" *ngIf="!bookId" (click)="addBook()" cdkFocusInitial>
+      Add Book
+    </button>
+    <button mat-flat-button color="primary" *ngIf="bookId" (click)="updateBook()" cdkFocusInitial>
+      Edit Book
+    </button>
+    <button mat-button color="primary" mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</div>

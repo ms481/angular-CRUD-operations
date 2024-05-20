@@ -1,0 +1,128 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Fellowship of the Ring",
+      "author": "J.R.R. Tolkien",
+      "category": "001",
+      "language": "ENG",
+      "quantity": 30
+    },
+    {
+      "id": 2,
+      "title": "The Two Towers",
+      "author": "J.R.R. Tolkien",
+      "category": "001",
+      "language": "ENG",
+      "quantity": 20
+    },
+    {
+      "id": 3,
+      "title": "The Return of the King",
+      "author": "J.R.R. Tolkien",
+      "category": "001",
+      "language": "ENG",
+      "quantity": 20
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "category": "001",
+      "language": "ENG",
+      "quantity": 40
+    },
+    {
+      "id": 5,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "006",
+      "language": "ENG",
+      "quantity": 5
+    },
+    {
+      "id": 6,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "category": "009",
+      "language": "ENG",
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "category": "010",
+      "language": "ENG",
+      "quantity": 4
+    },
+    {
+      "id": 8,
+      "title": "Twilight",
+      "author": "Stephenie Meyer",
+      "category": "001",
+      "language": "GER",
+      "quantity": 15
+    },
+    {
+      "id": 9,
+      "title": "Java Cookbook",
+      "author": "Ian F. Darwin",
+      "category": "002",
+      "language": "ENG",
+      "quantity": 15
+    }
+  ],
+  "categories": [
+    {
+      "key": "001",
+      "value": "Fantasy"
+    },
+    {
+      "key": "002",
+      "value": "Science"
+    },
+    {
+      "key": "003",
+      "value": "Mystery"
+    },
+    {
+      "key": "004",
+      "value": "Business"
+    },
+    {
+      "key": "005",
+      "value": "Romance"
+    },
+    {
+      "key": "006",
+      "value": "Historical"
+    },
+    {
+      "key": "007",
+      "value": "Thriller"
+    },
+    {
+      "key": "008",
+      "value": "Comics"
+    },
+    {
+      "key": "009",
+      "value": "Classics"
+    },
+    {
+      "key": "010",
+      "value": "Fiction"
+    }
+  ],
+  "languages": [
+    {
+      "key": "ENG",
+      "value": "English"
+    },
+    {
+      "key": "GER",
+      "value": "German"
+    }
+  ]
+}
