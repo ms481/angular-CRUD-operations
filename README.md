@@ -1,6 +1,10 @@
 # AngularCRUDOperations
 
-Angular 17 project showing CRUD operations (Add, delete, update) a book. Filter book table by different criteria. Using Angular Material.
+Angular 17 project showing CRUD operations (add, delete or edit a book). Filter books table by different criteria. Using Angular Material.
+
+Project demo: https://youtu.be/26YgBFQceyo
+
+![angular-CRUD-operations_](https://github.com/ms481/angular-CRUD-operations/assets/118136815/a89312a1-38f7-4bbc-88e5-87c2e2bca2d9)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
